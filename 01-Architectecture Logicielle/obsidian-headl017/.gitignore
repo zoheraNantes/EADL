@@ -1,0 +1,24 @@
+# État de travail Obsidian — propre à chaque utilisateur
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspaces.json
+
+# Cache et données personnelles des plugins
+.obsidian/plugins/*/data.json
+.obsidian/plugins/*/cache/
+.obsidian/plugins/*/data/
+
+# Données locales de certains plugins courants
+.obsidian/plugins/obsidian-git/data.json
+.obsidian/plugins/dataview/cache.json
+
+# Corbeille Obsidian
+.trash/
+
+# Fichiers système / éditeur
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+.vscode/
