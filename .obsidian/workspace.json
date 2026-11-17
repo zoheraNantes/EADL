@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-CI-CD Automatisation des tests et doc/Les liens.md",
+                "file": "VOCABULAIRES.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Les liens"
+              "title": "VOCABULAIRES"
             }
           }
         ]
@@ -207,7 +207,7 @@
       "obsidian-spaced-repetition:Apprendre les flashcards": false
     }
   },
-  "active": "c6f685f6486f1187",
+  "active": "28c4c2877ac3487b",
   "lastOpenFiles": [
     "02-CI-CD Automatisation des tests et doc/Les liens.md",
     "02-CI-CD Automatisation des tests et doc/Sans titre.md",
