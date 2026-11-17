@@ -11,10 +11,14 @@
             "id": "455b3c0bd6997a5a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Les liens.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nouvel onglet"
+              "title": "Les liens"
             }
           }
         ]
@@ -155,6 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Les liens.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
