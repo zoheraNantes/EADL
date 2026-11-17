@@ -188,7 +188,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -207,8 +207,9 @@
       "obsidian-spaced-repetition:Apprendre les flashcards": false
     }
   },
-  "active": "ea70a8fbfb4127d8",
+  "active": "c6f685f6486f1187",
   "lastOpenFiles": [
+    "02-CI-CD Automatisation des tests et doc/Les liens.md",
     "02-CI-CD Automatisation des tests et doc/Sans titre.md",
     "SECURITE/FAILLES DE SECURITE.md",
     "SECURITE/VULNERABILITES.md",
@@ -216,7 +217,6 @@
     "CDA",
     "ANGLAIS/Flashcards - verbes irréguliers.md",
     "ANGLAIS",
-    "02-CI-CD Automatisation des tests et doc/Les liens.md",
     "02-CI-CD Automatisation des tests et doc/Les différents types de tests logiciels.md",
     "02-CI-CD Automatisation des tests et doc",
     "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/vertical-scaling.png",
