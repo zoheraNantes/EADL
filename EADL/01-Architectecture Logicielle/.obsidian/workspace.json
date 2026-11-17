@@ -11,10 +11,13 @@
             "id": "7b1fea84b33f62cb",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vue graphique"
+              "type": "bases",
+              "state": {
+                "file": "TAGS.base",
+                "viewName": "Vue"
+              },
+              "icon": "lucide-table",
+              "title": "TAGS"
             }
           }
         ]
