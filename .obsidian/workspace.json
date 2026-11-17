@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4b45942059253c57",
+        "id": "798d90de84616333",
         "type": "tabs",
         "children": [
           {
-            "id": "4bae79994163b92b",
+            "id": "455b3c0bd6997a5a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ANGLAIS/Flashcards - verbes irréguliers.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Flashcards - verbes irréguliers"
+              "title": "Nouvel onglet"
             }
           }
         ]
@@ -173,8 +169,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -188,7 +184,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -207,7 +203,7 @@
       "obsidian-spaced-repetition:Apprendre les flashcards": false
     }
   },
-  "active": "4bae79994163b92b",
+  "active": "455b3c0bd6997a5a",
   "lastOpenFiles": [
     "ANGLAIS/Flashcards - verbes irréguliers.md",
     "EADL/02-CI-CD Automatisation des tests et doc/Les différents types de tests logiciels.md",
