@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "798d90de84616333",
+        "id": "81a0eeeb44b15415",
         "type": "tabs",
         "children": [
           {
-            "id": "455b3c0bd6997a5a",
+            "id": "28c4c2877ac3487b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Les liens.md",
+                "file": "02-CI-CD Automatisation des tests et doc/Les liens.md",
                 "mode": "source",
                 "source": false
               },
@@ -159,7 +159,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Les liens.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -193,7 +192,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 537.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -208,42 +207,54 @@
       "obsidian-spaced-repetition:Apprendre les flashcards": false
     }
   },
-  "active": "455b3c0bd6997a5a",
+  "active": "ea70a8fbfb4127d8",
   "lastOpenFiles": [
-    "ANGLAIS/Flashcards - verbes irréguliers.md",
-    "EADL/02-CI-CD Automatisation des tests et doc/Les différents types de tests logiciels.md",
-    "Flashcards.md",
-    "Les liens.md",
-    "Films ou documentaires.md",
-    "VOCABULAIRES.md",
-    "TAGS.base",
-    "2026-11-16.md",
+    "02-CI-CD Automatisation des tests et doc/Sans titre.md",
+    "SECURITE/FAILLES DE SECURITE.md",
     "SECURITE/VULNERABILITES.md",
     "SECURITE",
-    "EADL/01-Architectecture Logicielle/obsidian-headl017/Communication synchrone vs asynchrone.md",
-    "SECURITE/FAILLES DE SECURITE.md",
-    "EADL/01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/architecture-monolithique.png",
-    "ENGLISH.md",
+    "CDA",
+    "ANGLAIS/Flashcards - verbes irréguliers.md",
+    "ANGLAIS",
+    "02-CI-CD Automatisation des tests et doc/Les liens.md",
+    "02-CI-CD Automatisation des tests et doc/Les différents types de tests logiciels.md",
+    "02-CI-CD Automatisation des tests et doc",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/vertical-scaling.png",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/sync_vs_async.webp",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/sync-vs-async.png",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/horizontal-scaling.png",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/CQRS-pattern.png",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/communication-synchrone.svg",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/communication-synchrone.png",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/communication-asynchrone.svg",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/bounded-context.png",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/communication-asynchrone.png",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Domain Driven Design/Value Object DDD.md",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Domain Driven Design/Ubiquitous language DDD.md",
     "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Domain Driven Design/Invariant métier - DDD.md",
     "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Domain Driven Design/Domain Driven Design.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Architecture microservices.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Architecture hexagonale.md",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Domain Driven Design/Aggrégat DDD.md",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Tiers.md",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Service Oriented Architecture.md",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Scalabilité.md",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/REST.md",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/SAGA pattern.md",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Polyglotisme.md",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Message Broker.md",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Loi de Conway.md",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/GraphQL.md",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Eventual Consistency.md",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Event Driven Architecture.md",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Domain Driven Design",
     "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Architecture SOA.md",
     "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Diagrammes UML.md",
     "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Design Pattern Façade.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/GraphQL.md",
-    "01-Architectecture Logicielle/obsidian-headl017/00 - Tags/Design pattern.md",
-    "01-Architectecture Logicielle/obsidian-headl017/Bienvenue.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Event Driven Architecture.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/API Gateway.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/architecture-SOA.png",
-    "01-Architectecture Logicielle/obsidian-headl017/00 - Tags/Architecture logicielle.md",
-    "01-Architectecture Logicielle/obsidian-headl017/00 - Tags/Microservices.md",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Architecture monolithique.md",
+    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle",
+    "01-Architectecture Logicielle/obsidian-headl017/01 - Templates",
+    "01-Architectecture Logicielle/obsidian-headl017/00 - Tags",
     "01-Architectecture Logicielle/TAGS.base",
-    "Sans titre.canvas",
-    "Sans titre.base",
-    "02-CI-CD Automatisation des tests et doc/Sans titre",
-    "02-CI-CD Automatisation des tests et doc",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/architecture-hexagonale.png"
+    "Sans titre.canvas"
   ]
 }

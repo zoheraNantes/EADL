@@ -1,7 +1,0 @@
-https://www.conventionalcommits.org/en/v1.0.0/
-
-
-C EST QUOI commitizen-tools.gituhub.io/commitizen/config
-**Commitizen** est un outil qui aide les développeurs à rédiger des messages de commit Git de manière standardisée.
-
-[Documentation officielle de Commitizen — Configuration](https://commitizen-tools.github.io/commitizen/config/?utm_source=chatgpt.com)
