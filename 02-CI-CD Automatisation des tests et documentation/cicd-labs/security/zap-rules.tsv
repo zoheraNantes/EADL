@@ -1,0 +1,5 @@
+# Règles OWASP ZAP baseline : IGNORE | WARN | FAIL  (id<TAB>action<TAB>commentaire)
+10021	WARN	X-Content-Type-Options manquant
+10038	WARN	Content-Security-Policy manquante (à corriger : passer en FAIL une fois traité)
+10049	IGNORE	Contenu non stockable en cache (API)
+90004	WARN	Isolation de site insuffisante (en-têtes Cross-Origin-*-Policy manquants)

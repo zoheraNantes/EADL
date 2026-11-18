@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MiniShop</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1 data-testid="title">MiniShop</h1>
+    <p class="tagline">La boutique des pipelines verts</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="catalog-title">
+      <h2 id="catalog-title">Catalogue</h2>
+      <ul id="products" data-testid="products"></ul>
+    </section>
+
+    <section aria-labelledby="cart-title" class="cart">
+      <h2 id="cart-title">Panier</h2>
+      <ul id="cart" data-testid="cart"><li class="empty">Votre panier est vide</li></ul>
+      <label for="coupon">Code promo</label>
+      <input id="coupon" data-testid="coupon" placeholder="WELCOME10">
+      <button id="quote-btn" data-testid="quote-btn">Calculer le total</button>
+      <div id="summary" data-testid="summary" hidden>
+        <p>Sous-total : <span data-testid="subtotal"></span> €</p>
+        <p>Remise : <span data-testid="discount"></span> €</p>
+        <p>Livraison : <span data-testid="shipping"></span> €</p>
+        <p class="total">Total : <span data-testid="total"></span> €</p>
+      </div>
+      <p id="error" data-testid="error" role="alert" hidden></p>
+      <button id="order-btn" data-testid="order-btn" disabled>Commander</button>
+      <p id="confirmation" data-testid="confirmation" hidden></p>
+    </section>
+  </main>
+
+  <script>
+    const cart = new Map();
+
+    async function loadProducts() {
+      const res = await fetch('/products');
+      const products = await res.json();
+      const ul = document.getElementById('products');
+      ul.innerHTML = '';
+      for (const p of products) {
+        const li = document.createElement('li');
+        li.dataset.testid = `product-${p.id}`;
+        li.innerHTML = `<span class="name">${p.name}</span>
+          <span class="price">${p.price} €</span>
+          <button data-testid="add-${p.id}">Ajouter</button>`;
+        li.querySelector('button').addEventListener('click', () => addToCart(p));
+        ul.appendChild(li);
+      }
+    }
+
+    function renderCart() {
+      const ul = document.getElementById('cart');
+      ul.innerHTML = '';
+      if (cart.size === 0) {
+        ul.innerHTML = '<li class="empty">Votre panier est vide</li>';
+      }
+      for (const [id, item] of cart) {
+        const li = document.createElement('li');
+        li.dataset.testid = `cart-${id}`;
+        li.textContent = `${item.name} × ${item.qty}`;
+        ul.appendChild(li);
+      }
+      document.getElementById('order-btn').disabled = cart.size === 0;
+    }
+
+    function addToCart(p) {
+      const current = cart.get(p.id) || { name: p.name, qty: 0 };
+      current.qty += 1;
+      cart.set(p.id, current);
+      renderCart();
+    }
+
+    function payload() {
+      return {
+        items: [...cart].map(([product_id, i]) => ({ product_id, qty: i.qty })),
+        coupon: document.getElementById('coupon').value || null,
+      };
+    }
+
+    async function computeQuote() {
+      const error = document.getElementById('error');
+      error.hidden = true;
+      const res = await fetch('/cart/quote', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload()),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        error.textContent = data.detail;
+        error.hidden = false;
+        return;
+      }
+      for (const k of ['subtotal', 'discount', 'shipping', 'total']) {
+        document.querySelector(`[data-testid="${k}"]`).textContent = data[k];
+      }
+      document.getElementById('summary').hidden = false;
+    }
+
+    async function order() {
+      const res = await fetch('/orders', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload()),
+      });
+      const data = await res.json();
+      const conf = document.getElementById('confirmation');
+      conf.textContent = res.ok ? `Commande ${data.id} confirmée` : data.detail;
+      conf.hidden = false;
+    }
+
+    document.getElementById('quote-btn').addEventListener('click', computeQuote);
+    document.getElementById('order-btn').addEventListener('click', order);
+    loadProducts();
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "info": {"name": "MiniShop API", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "variable": [{"key": "baseUrl", "value": "http://localhost:8000"}],
+  "item": [
+    {"name": "Health", "request": {"method": "GET", "url": "{{baseUrl}}/health"},
+     "event": [{"listen": "test", "script": {"exec": [
+       "pm.test('200', () => pm.response.to.have.status(200));",
+       "pm.test('status ok', () => pm.expect(pm.response.json().status).to.eql('ok'));",
+       "pm.test('< 200 ms', () => pm.expect(pm.response.responseTime).to.be.below(200));"]}}]},
+    {"name": "Devis avec coupon", "request": {"method": "POST", "url": "{{baseUrl}}/cart/quote",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"items\":[{\"product_id\":\"mug\",\"qty\":2}],\"coupon\":\"WELCOME10\"}"}},
+     "event": [{"listen": "test", "script": {"exec": [
+       "pm.test('200', () => pm.response.to.have.status(200));",
+       "pm.test('total 27.40', () => pm.expect(pm.response.json().total).to.eql('27.40'));"]}}]},
+    {"name": "Coupon inconnu -> 422", "request": {"method": "POST", "url": "{{baseUrl}}/cart/quote",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"items\":[{\"product_id\":\"mug\",\"qty\":1}],\"coupon\":\"NOEL\"}"}},
+     "event": [{"listen": "test", "script": {"exec": ["pm.test('422', () => pm.response.to.have.status(422));"]}}]}
+  ]
+}

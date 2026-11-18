@@ -1,0 +1,6 @@
+apiVersion: 1
+providers:
+  - name: formation
+    folder: Formation CI/CD
+    type: file
+    options: { path: /var/lib/grafana/dashboards }

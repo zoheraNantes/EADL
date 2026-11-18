@@ -1,0 +1,32 @@
+groups:
+  - name: qualite-tests
+    rules:
+      - alert: TauxDeReussiteEnBaisse
+        expr: ci_tests_pass_ratio{branch="main"} < 0.95
+        for: 10s
+        labels: { severity: critical }
+        annotations:
+          summary: "Régression : {{ $value | humanizePercentage }} de tests OK sur main"
+          description: "Le taux de réussite des tests sur main est passé sous 95 %."
+
+      - alert: SuiteDeTestsTropLente
+        expr: ci_tests_duration_seconds > 1.5 * avg_over_time(ci_tests_duration_seconds[1h])
+        for: 30s
+        labels: { severity: warning }
+        annotations:
+          summary: "La suite de tests ralentit ({{ $value | humanizeDuration }})"
+
+      - alert: PasDeRunDepuisLongtemps
+        expr: time() - ci_last_run_timestamp > 86400
+        labels: { severity: warning }
+        annotations:
+          summary: "Aucun run de tests depuis 24 h sur {{ $labels.branch }}"
+
+  - name: application
+    rules:
+      - alert: LatenceP95Elevee
+        expr: histogram_quantile(0.95, sum by (le) (rate(minishop_http_request_duration_seconds_bucket[1m]))) > 0.3
+        for: 30s
+        labels: { severity: warning }
+        annotations:
+          summary: "p95 de MiniShop au-dessus de 300 ms"

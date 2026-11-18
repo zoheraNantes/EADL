@@ -1,0 +1,11 @@
+route:
+  receiver: journal
+  group_wait: 5s
+receivers:
+  - name: journal
+    # Récepteur de démonstration : lancez `python scripts/alert_receiver.py` sur votre poste pour voir
+    # arriver les alertes. Sans récepteur, Alertmanager journalise « connection refused » : c'est attendu.
+    # En vrai : remplacer par slack_configs, msteams_configs, email_configs...
+    webhook_configs:
+      - url: http://host.docker.internal:5001/alert
+        send_resolved: true
