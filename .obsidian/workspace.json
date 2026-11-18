@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "4b17870f3890c234",
+    "id": "4b6f20c3c22a2192",
     "type": "split",
     "children": [
       {
-        "id": "81a0eeeb44b15415",
+        "id": "e75b47bc19104984",
         "type": "tabs",
         "children": [
           {
-            "id": "28c4c2877ac3487b",
+            "id": "8416187e18b6830d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02-CI-CD Automatisation des tests et doc/Les liens.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Les liens"
+              "title": "Nouvel onglet"
             }
           }
         ]
@@ -27,21 +23,21 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "c432f9a734afcee0",
+    "id": "d446cb58c18dfde0",
     "type": "split",
     "children": [
       {
-        "id": "1fa7ce7addc1a094",
+        "id": "f7f9d9093f0d8e5a",
         "type": "tabs",
         "children": [
           {
-            "id": "799bae03a2021fed",
+            "id": "c55b2c7f69072588",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true,
+                "autoReveal": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -50,7 +46,7 @@
             }
           },
           {
-            "id": "7f6ad3564090f106",
+            "id": "134a35d17b8a7029",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -67,7 +63,7 @@
             }
           },
           {
-            "id": "6b94d94080f88137",
+            "id": "89d00502a09d24ba",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -86,15 +82,15 @@
     "width": 300
   },
   "right": {
-    "id": "b7829fef7554f733",
+    "id": "313afb192d514be2",
     "type": "split",
     "children": [
       {
-        "id": "542f9dd582ab174c",
+        "id": "72a1b584d73abe2e",
         "type": "tabs",
         "children": [
           {
-            "id": "74144a17ee951b44",
+            "id": "4815f988305fc7a4",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -112,7 +108,7 @@
             }
           },
           {
-            "id": "a8b195787f3cd9e5",
+            "id": "88574601e9162a79",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -125,7 +121,7 @@
             }
           },
           {
-            "id": "d45ac85c7ace3d9b",
+            "id": "e11a122ccab6e417",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -140,7 +136,7 @@
             }
           },
           {
-            "id": "2330549cbcf206a1",
+            "id": "c71f59fd4f09b925",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -154,7 +150,7 @@
             }
           },
           {
-            "id": "8d5d80c6bec6a6d9",
+            "id": "978f9f71f1e2b075",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -168,7 +164,7 @@
             }
           },
           {
-            "id": "ea70a8fbfb4127d8",
+            "id": "c993c1dead82a025",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -176,85 +172,26 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
-          },
-          {
-            "id": "c6f685f6486f1187",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Cartes à apprendre"
-            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 537.5
+    "width": 601.5
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
       "canvas:Créer un nouveau canvas": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
       "bases:Créer une nouvelle base": false,
-      "daily-notes:Ouvrir la note quotidienne": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-spaced-repetition:Apprendre les flashcards": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "28c4c2877ac3487b",
-  "lastOpenFiles": [
-    "02-CI-CD Automatisation des tests et doc/Déployer une application.md",
-    "02-CI-CD Automatisation des tests et doc/Les différents types de tests logiciels.md",
-    "02-CI-CD Automatisation des tests et doc/Les liens.md",
-    "VOCABULAIRES.md",
-    "SECURITE/FAILLES DE SECURITE.md",
-    "SECURITE/VULNERABILITES.md",
-    "SECURITE",
-    "CDA",
-    "ANGLAIS/Flashcards - verbes irréguliers.md",
-    "ANGLAIS",
-    "02-CI-CD Automatisation des tests et doc",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/vertical-scaling.png",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/sync_vs_async.webp",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/sync-vs-async.png",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/horizontal-scaling.png",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/CQRS-pattern.png",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/communication-synchrone.svg",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/communication-synchrone.png",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/communication-asynchrone.svg",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/bounded-context.png",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/communication-asynchrone.png",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Domain Driven Design/Value Object DDD.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Domain Driven Design/Ubiquitous language DDD.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Domain Driven Design/Invariant métier - DDD.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Domain Driven Design/Domain Driven Design.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Domain Driven Design/Aggrégat DDD.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Tiers.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Service Oriented Architecture.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Scalabilité.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/REST.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/SAGA pattern.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Polyglotisme.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Message Broker.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Loi de Conway.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/GraphQL.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Eventual Consistency.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Event Driven Architecture.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Domain Driven Design",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Architecture SOA.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Diagrammes UML.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Design Pattern Façade.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle",
-    "01-Architectecture Logicielle/obsidian-headl017/01 - Templates",
-    "01-Architectecture Logicielle/obsidian-headl017/00 - Tags",
-    "01-Architectecture Logicielle/TAGS.base",
-    "Sans titre.canvas"
-  ]
+  "active": "8416187e18b6830d",
+  "lastOpenFiles": []
 }
