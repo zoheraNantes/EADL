@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VOCABULAIRES.md",
+                "file": "02-CI-CD Automatisation des tests et doc/Les liens.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "VOCABULAIRES"
+              "title": "Les liens"
             }
           }
         ]
@@ -209,15 +209,16 @@
   },
   "active": "28c4c2877ac3487b",
   "lastOpenFiles": [
+    "02-CI-CD Automatisation des tests et doc/Déployer une application.md",
+    "02-CI-CD Automatisation des tests et doc/Les différents types de tests logiciels.md",
     "02-CI-CD Automatisation des tests et doc/Les liens.md",
-    "02-CI-CD Automatisation des tests et doc/Sans titre.md",
+    "VOCABULAIRES.md",
     "SECURITE/FAILLES DE SECURITE.md",
     "SECURITE/VULNERABILITES.md",
     "SECURITE",
     "CDA",
     "ANGLAIS/Flashcards - verbes irréguliers.md",
     "ANGLAIS",
-    "02-CI-CD Automatisation des tests et doc/Les différents types de tests logiciels.md",
     "02-CI-CD Automatisation des tests et doc",
     "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/vertical-scaling.png",
     "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/images/sync_vs_async.webp",
@@ -250,7 +251,6 @@
     "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Architecture SOA.md",
     "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Diagrammes UML.md",
     "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Design Pattern Façade.md",
-    "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle/Architecture monolithique.md",
     "01-Architectecture Logicielle/obsidian-headl017/02 - architecture logicielle",
     "01-Architectecture Logicielle/obsidian-headl017/01 - Templates",
     "01-Architectecture Logicielle/obsidian-headl017/00 - Tags",
