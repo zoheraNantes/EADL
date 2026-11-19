@@ -10,6 +10,12 @@ concurrency:                      # annule le run précédent de la même branch
   group: ci-${{ github.ref }}
   cancel-in-progress: true
 
+defaults:
+  run:
+    working-directory: '02-CI-CD Automatisation des tests et documentation/cicd-labs'
+
+env:
+  CICD_LABS_DIR: '02-CI-CD Automatisation des tests et documentation/cicd-labs'
 permissions:
   contents: read
 
@@ -37,7 +43,8 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
           cache: pip
-          cache-dependency-path: requirements-dev.txt
+          #cache-dependency-path: requirements-dev.txt
+          cache-dependency-path: ${{ env.CICD_LABS_DIR }}/requirements-dev.txt
       - run: pip install -r requirements-dev.txt
      
       - name: Tests unitaires + API en parallèle (xdist)
@@ -51,10 +58,14 @@ jobs:
         with:
           name: test-reports-${{ matrix.python }}     # un artefact par version de Python
       #Fichiers des rapports JUnit des tests et HTML, XML de couverture
+          #path: |
+            #reports/
+            #htmlcov/
+            #coverage.xml
           path: |
-            reports/
-            htmlcov/
-            coverage.xml
+            ${{ env.CICD_LABS_DIR }}/reports/
+            ${{ env.CICD_LABS_DIR }}/htmlcov/
+            ${{ env.CICD_LABS_DIR }}/coverage.xml
       # Afficher le résumé de couverture dans GitHub Actions      
       - name: Résumé dans la page du run
         if: always() && matrix.python == '3.12'        # Uniquement pour Python 3.12
@@ -67,10 +78,23 @@ jobs:
     needs: lint
     runs-on: ubuntu-latest
     container: python:3.12-slim
+    defaults:
+      run:
+        working-directory: .  
     steps:
       - uses: actions/checkout@v4
-      - run: pip install -r requirements-dev.txt
-      - run: pytest -m unit -q
+     # Anciennes commandes, gardées comme référence
+     # - run: pip install -r requirements-dev.txt
+     # - run: pytest -m unit -q
+      - name: Installer les dépendances
+        run: |
+          cd "$CICD_LABS_DIR"
+          pip install -r requirements-dev.txt
+
+      - name: Exécuter les tests unitaires dans le conteneur
+        run: |
+          cd "$CICD_LABS_DIR"
+          pytest -m unit -q
 
   docker:
     # needs: unit                            # Désactivé car attend la réussite du job unit et pour que la pipeline passe et eviter d'attendre la réussite des tests unitaires.
@@ -107,7 +131,7 @@ jobs:
         uses: aquasecurity/trivy-action@v0.36.0
         with:
           scan-type: fs                   # Analyse les fichiers du projet
-          scan-ref: .                     # Répertoire courant du projet
+         #scan-ref: .                     # Répertoire courant du projet
           severity: HIGH,CRITICAL         # Vulnérabilités élevées et critiques
           exit-code: '0'                  # Ne bloque pas le pipeline, Affiche les résultats sans faire échouer le job
 
@@ -121,5 +145,6 @@ jobs:
         with:
           scan-type: image                 # Analyse une image Docker
           image-ref: minishop:trivy        # Image construite précédemment
+          scan-ref: ${{ env.CICD_LABS_DIR }}
           severity: HIGH,CRITICAL         # Vulnérabilités élevées et critiques
           exit-code: '0'                  # Ne bloque pas le pipeline
