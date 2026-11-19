@@ -75,8 +75,7 @@
               "title": "Signets"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -193,8 +192,39 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c993c1dead82a025",
+  "active": "27e2ff9ebe2e88e1",
   "lastOpenFiles": [
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/visual/test_visual.py",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/visual/baselines",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/unit/__init__.py",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/unit/test_pricing.py",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/perf/minishop.jmx",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/perf/locustfile.py",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/generated/__init__.py",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/e2e/test_parcours_achat.py",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/api/__init__.py",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/api/test_api_smoke.py",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/api/minishop.postman_collection.json",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/docs/tests/catalogue.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/docs/adr/0001-choix-playwright.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/docs/strategie-de-test.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/docs/index.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-12-reporting-doc-monitoring.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-11-securite.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-10-performance.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-09-tests-api.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-08-tests-ui-e2e.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-07-tests-visuels-ia.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-06-ml-zones-a-risque.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-03-generation-tests-ia.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-05-anomalies-logs-tests.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-04-ia-dans-la-ci.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-02-premier-pipeline.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-01-tests-unitaires.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-00-installation.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ai_tools/prompts/generate_tests.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/README.md",
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/CHANGELOG.md",
     "obsidian/02-CI-CD Automatisation des tests et doc/Les liens.md",
     "obsidian/02-CI-CD Automatisation des tests et doc/Les différents types de tests logiciels.md",
     "obsidian/02-CI-CD Automatisation des tests et doc/Déployer une application.md"
