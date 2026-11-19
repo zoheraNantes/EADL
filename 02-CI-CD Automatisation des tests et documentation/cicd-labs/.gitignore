@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.coverage
+coverage.xml
+htmlcov/
+reports/
+allure-results/
+allure-report/
+logs/
+site/
+test-results/
+tests/visual/current/
+tests/visual/diff/
+.pytest_cache/
+.ruff_cache/

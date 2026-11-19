@@ -1,0 +1,33 @@
+# Stack de monitoring des tests (Atelier 12)
+#   docker compose -f monitoring/docker-compose.yml up -d
+#   Prometheus  http://localhost:9090   Pushgateway http://localhost:9091
+#   Grafana     http://localhost:3000   (admin / admin)   Alertmanager http://localhost:9093
+services:
+  pushgateway:
+    image: prom/pushgateway:v1.9.0
+    ports: ["9091:9091"]
+
+  prometheus:
+    image: prom/prometheus:v2.54.1
+    ports: ["9090:9090"]
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./alerts.yml:/etc/prometheus/alerts.yml:ro
+    extra_hosts: ["host.docker.internal:host-gateway"]
+
+  alertmanager:
+    image: prom/alertmanager:v0.27.0
+    ports: ["9093:9093"]
+    volumes:
+      - ./alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
+    extra_hosts: ["host.docker.internal:host-gateway"]   # webhook vers le poste (scripts/alert_receiver.py)
+
+  grafana:
+    image: grafana/grafana:11.2.0
+    ports: ["3000:3000"]
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: admin
+      GF_USERS_DEFAULT_LANGUAGE: fr-FR
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro

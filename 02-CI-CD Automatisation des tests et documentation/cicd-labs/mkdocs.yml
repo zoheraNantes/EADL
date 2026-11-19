@@ -1,0 +1,18 @@
+site_name: MiniShop — Documentation qualité
+repo_url: https://github.com/VOTRE-COMPTE/cicd-ia-labs
+theme:
+  name: material
+  language: fr
+  features: [navigation.sections, content.code.copy, search.highlight]
+nav:
+  - Accueil: index.md
+  - Stratégie de test: strategie-de-test.md
+  - Catalogue des tests: tests/catalogue.md
+  - Décisions (ADR):
+      - adr/0001-choix-playwright.md
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.superfences:
+      custom_fences:
+        - { name: mermaid, class: mermaid, format: !!python/name:pymdownx.superfences.fence_code_format }
