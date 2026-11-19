@@ -11,10 +11,14 @@
             "id": "8416187e18b6830d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "obsidian/02-CI-CD Automatisation des tests et doc/Les liens.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nouvel onglet"
+              "title": "Les liens"
             }
           }
         ]
@@ -51,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Le",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +79,8 @@
               "title": "Signets"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -192,6 +197,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8416187e18b6830d",
-  "lastOpenFiles": []
+  "active": "134a35d17b8a7029",
+  "lastOpenFiles": [
+    "obsidian/02-CI-CD Automatisation des tests et doc/Les différents types de tests logiciels.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Déployer une application.md"
+  ]
 }

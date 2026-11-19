@@ -1,3 +1,6 @@
+**Le Shift Left** est une approche de développement logiciel qui consiste à effectuer les tests et les contrôles de qualité le plus tôt possible dans le cycle de développement, plutôt que d'attendre la fin du projet.
+
+
 
 Framework pre-commit : https://pre-commit.com/
 
