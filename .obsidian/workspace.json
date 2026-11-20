@@ -11,10 +11,14 @@
             "id": "27e2ff9ebe2e88e1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "obsidian/02-CI-CD Automatisation des tests et doc/Module 1/Chapitre 01 - Automatisation des tests.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nouvel onglet"
+              "title": "Chapitre 01 - Automatisation des tests"
             }
           }
         ]
@@ -79,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 429.5,
+    "collapsed": true
   },
   "right": {
     "id": "313afb192d514be2",
@@ -95,6 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "obsidian/02-CI-CD Automatisation des tests et doc/Les liens.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "obsidian/02-CI-CD Automatisation des tests et doc/Les liens.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -155,6 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "obsidian/02-CI-CD Automatisation des tests et doc/Les liens.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -178,7 +186,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 601.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,6 +203,23 @@
   },
   "active": "27e2ff9ebe2e88e1",
   "lastOpenFiles": [
+    "Chapitre 13 - Reponse sur les outils et frameworks.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Module 1/00 - Sommaire.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Chapitre 12 - Questions sur les outils et frameworks.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Module 1/Chapitre 11 - Réponses au Révisions.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Module 1/Chapitre 10 - Révisions.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Déployer une application.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Module 1/Chapitre 04 - CI-CD et pipelines.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Module 1/Chapitre 01 - Automatisation des tests.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Module 1/Chapitre 09 - Organisation des tests.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Module 1/Chapitre 08 - Outils et frameworks.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Module 1/Chapitre 07 - Parallélisme et conteneurs.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Module 1/Chapitre 06 - GitHub Actions et GitLab CI.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Module 1/Chapitre 05 - Quality Gates.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Module 1/Chapitre 03 - Bonnes pratiques et TDD.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Module 1/Chapitre 02 - Types de tests.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Les liens.md",
+    "obsidian/02-CI-CD Automatisation des tests et doc/Module 1",
     "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/visual/test_visual.py",
     "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/visual/baselines",
     "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/unit/__init__.py",
@@ -203,8 +229,6 @@
     "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/generated/__init__.py",
     "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/e2e/test_parcours_achat.py",
     "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/api/__init__.py",
-    "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/api/test_api_smoke.py",
-    "02-CI-CD Automatisation des tests et documentation/cicd-labs/tests/api/minishop.postman_collection.json",
     "02-CI-CD Automatisation des tests et documentation/cicd-labs/docs/tests/catalogue.md",
     "02-CI-CD Automatisation des tests et documentation/cicd-labs/docs/adr/0001-choix-playwright.md",
     "02-CI-CD Automatisation des tests et documentation/cicd-labs/docs/strategie-de-test.md",
@@ -214,19 +238,6 @@
     "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-10-performance.md",
     "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-09-tests-api.md",
     "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-08-tests-ui-e2e.md",
-    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-07-tests-visuels-ia.md",
-    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-06-ml-zones-a-risque.md",
-    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-03-generation-tests-ia.md",
-    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-05-anomalies-logs-tests.md",
-    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-04-ia-dans-la-ci.md",
-    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-02-premier-pipeline.md",
-    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-01-tests-unitaires.md",
-    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-00-installation.md",
-    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ai_tools/prompts/generate_tests.md",
-    "02-CI-CD Automatisation des tests et documentation/cicd-labs/README.md",
-    "02-CI-CD Automatisation des tests et documentation/cicd-labs/CHANGELOG.md",
-    "obsidian/02-CI-CD Automatisation des tests et doc/Les liens.md",
-    "obsidian/02-CI-CD Automatisation des tests et doc/Les différents types de tests logiciels.md",
-    "obsidian/02-CI-CD Automatisation des tests et doc/Déployer une application.md"
+    "02-CI-CD Automatisation des tests et documentation/cicd-labs/ateliers/atelier-07-tests-visuels-ia.md"
   ]
 }

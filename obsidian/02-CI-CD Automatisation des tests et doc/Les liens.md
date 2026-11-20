@@ -94,5 +94,28 @@ https://github.com/Fission-AI/OpenSpec
 - **OpenSpec** : outil pour organiser les spécifications et guider le développement avec l'IA.
 
 
+voir wrapper d'api les services en abstraction ?
+
+**Schemathesis** est un outil Python qui permet de **générer et d'exécuter automatiquement des tests d'API** à partir de leur documentation OpenAPI.
+
+
+
+Outils
+Bandit
+Semgrep
+SonarQube
+CodeQL
+pip audit
+Dependabot
+Snyk
+Renovate
+Trivy
+Grype
+Docker Scout
+OWASP ZAP
+Burp Suite 
+Nuclei
+
+
 
 
